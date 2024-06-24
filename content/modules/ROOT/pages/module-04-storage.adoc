@@ -1,6 +1,6 @@
 = Storage Management
 
-Red Hat OpenShift supports multiple types of storage, both for on-premises and cloud providers. OpenShift Virtualization can use any supported container storage interface (CSI) provisioner in the environment you're running on. For example, OpenShift Data Foundation, NetApp, Dell/EMC, Fujitsu, Hitachi, Pure Storage, Portworx, and many others support on-premises, CSI provisioned, ReadWriteMany (RWX) volumes with OpenShift Virtualization.
+Red Hat OpenShift supports multiple types of storage, both for on-premises and cloud providers. OpenShift Virtualization can use any supported container storage interface (CSI) provisioner in the environment you're running on. For example, OpenShift Data Foundation, NetApp, Dell/EMC, Fujitsu, Hitachi, Pure Storage, Portworx, IBM Fusion, and many others support on-premises, CSI provisioned, ReadWriteMany (RWX) volumes with OpenShift Virtualization.
 
 This workshop segment will explore Persistent Volume Claims (PVCs), which are used to request storage from the provider and store a VM disk. Many storage providers also support snapshots and clones of their devices, be sure to check with your vendor to verify the features supported by the CSI driver and storage device.
 
@@ -64,7 +64,7 @@ image::module-04-storage/04_Snapshots_Overview.png[link=self, window=blank, widt
 +
 image::module-04-storage/05_Snapshot_Menu.png[link=self, window=blank, width=100%]
 
-. Press *Take snapshot* and a dialog will open
+. Press *Take snapshot* and a dialog will open. Change the *Name* to *fedora01-snap*.
 +
 [NOTE]
 There is a warning about the *cloudinitdisk* not being included in the snapshot. This is expected and happens because it is an ephemeral disk.
@@ -134,7 +134,7 @@ Cloning creates a new VM that uses it's own disk image for storage, but most of 
 . Return to the *Overview* screen, and click the *Actions* dropdown menu to see the option to clone the VM.
 +
 image::module-04-storage/17_Overview_Actions_Clone.png[link=self, window=blank, width=100%]
-. Press *Clone* from the *Actions* menu, and a dialog will open. Name the cloned VM *fedora02*, and select the check box to *Start VirtualMachine on clone*.
+. Press *Clone* from the *Actions* menu, and a dialog will open. Name the cloned VM *fedora02*, and select the check box to *Start VirtualMachine on clone*. Click *Clone* to continue.
 +
 image::module-04-storage/18_VM_Clone_Dialog.png[link=self, window=blank, width=100%]
 +

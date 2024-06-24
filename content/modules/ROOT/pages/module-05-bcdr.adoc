@@ -137,7 +137,7 @@ image::module-05-bcdr/10_Create_Restore_YAML.png[link=self, window=blank, width=
 +
 image::module-05-bcdr/11_Restore_Completed.png[link=self, window=blank, width=100%]
 
-. Navigate back to *Virtualization* -> *Virtual Machines* and confirm that the *fedora02* virtual machine was restored.
+. Navigate back to *Virtualization* -> *Virtual Machines* and confirm that the *fedora02* virtual machine was restored. Make sure you are in the *vmexamples* namespace.
 +
 image::module-05-bcdr/12_VM_Restored.png[link=self, window=blank, width=100%]
 

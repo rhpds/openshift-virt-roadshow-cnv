@@ -117,7 +117,7 @@ image::module-03-baremetal/06_Add_Host_Red.png[link=self, window=blank, width=10
 +
 . The dialog menu to add a bare metal host will ask you for the following information:
 +
-* Host Name: *worker4*
+* Name: *worker4*
 * Boot MAC Address: *de:ad:be:ef:00:07*
 * BMC Address: *ipmi://192.168.123.1:6237*
 * BMC Username: *admin*
@@ -155,7 +155,7 @@ image::module-03-baremetal/10_Machinesets.png[link=self, window=blank, width=100
 +
 image::module-03-baremetal/11_Edit_Machine_Count.png[link=self, window=blank, width=100%]
 +
-. A new menu will appear showing the current machine count of *3*, click the plus (+) sign to increase the machine count to *4*.
+. A new menu will appear showing the current machine count of *3*, click the plus (+) sign to increase the machine count to *4*. Click *Save* to continue.
 +
 image::module-03-baremetal/12_Edit_Machine_Count_4.png[link=self, window=blank, width=100%]
 +
