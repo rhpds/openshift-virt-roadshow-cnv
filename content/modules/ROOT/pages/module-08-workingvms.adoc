@@ -139,7 +139,7 @@ IMPORTANT: Make sure to get the indentation exactly right - just like in the scr
 image::module-08-workingvms/12_Imported_VMs_YAML.png[link=self, window=blank, width=100%]
 +
 
-. *Repeat* the process for the VM *winweb02*.
+. Click *Save* and *Repeat* the process for the VM *winweb02*.
 
 . Start, or restart if already running, the *winweb01* and *winweb02* virtual machines.
 +
@@ -312,7 +312,7 @@ image::module-08-workingvms/24_Database_LB_YAML.png[link=self, window=blank, wid
 image::module-08-workingvms/25_Database_LB_Service_Created.png[link=self, window=blank, width=100%]
 +
 
-. To verify connectivity to the database service via the external IP, use the terminal to the right authenticate to the database at it's exposed LB address with the following credentials
+. To verify connectivity to the database service via the external IP, use the terminal to the right to authenticate to the database at it's exposed LB address with the credentials below.
 
 .. *Username*: *root*
 .. *Password*: *R3dh4t1!*
