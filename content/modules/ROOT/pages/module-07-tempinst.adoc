@@ -307,7 +307,7 @@ IMPORTANT: The VM is marked as "Not migratable" because a CD-ROM disk is attache
 +
 image::module-07-tempinst/27_Windows_PVC.png[link=self, window=blank, width=100%]
 +
-. Find the *windows* PVC that is listed and using the three-dot menu on the right select *Clone PVC*. On the menu that pops up, name the new PVC *windows-2k19-template*.
+. Find the *windows* PVC that is listed and using the three-dot menu on the right select *Clone PVC*. On the menu that pops up, name the new PVC *windows-2k19-template*. Click the *Clone* button to continue.
 +
 image::module-07-tempinst/28_Clone_Windows_PVC.png[link=self, window=blank, width=100%]
 +
@@ -355,4 +355,4 @@ image::module-07-tempinst/35_VM_Overview.png[link=self, window=blank, width=100%
 
 == Summary
 
-In this section we learned how to clone and customize and existing template to create one that can be used for specific workloads like databases. We also learned how to configure one of the existing Windows templates that exists without a boot source, and automate it's installation process, so we can create future templates by cloning the installation PVC that is created with that VM. We also introduced how to make use of instance types to further customize our virtual machines for specific workloads.
+In this section we learned how to clone and customize an existing template to create one that can be used for specific workloads like databases. We also learned how to configure one of the existing Windows templates that exists without a boot source, and automate it's installation process, so we can create future templates by cloning the installation PVC that is created with that VM. We also introduced how to make use of instance types to further customize our virtual machines for specific workloads.
