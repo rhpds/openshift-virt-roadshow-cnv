@@ -7,7 +7,7 @@ This portion of our lab uses the https://access.redhat.com/documentation/en-us/m
 * Cold migration turns off the source virtual machine before starting the migration. This is the default migration type.
 * Warm migration copies data while the source virtual machine continues to run. Once the bulk of data has been migrated, the VM is shutdown and the final data is copied to the destination. The new VM can then be started, resulting in a much shorter period of downtime for the VM-hosted application.
 
-NOTE: The migration toolkit has already been deployed to your cluster using the Operator available in OperatorHub. 
+NOTE: The migration toolkit has already been deployed to your cluster using the Operator available in OperatorHub.
 
 Documentation for how to install and configure the Operator can be found https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/2.6/html/installing_and_using_the_migration_toolkit_for_virtualization/installing-the-operator_mtv[here^].
 
@@ -43,7 +43,7 @@ NOTE: The *Migration Toolkit for Virtualization* will automatically assign a new
 
 A three-tier application has been deployed on VMware for you to migrate to OpenShift.
 
-The application is accessible from the following link: http://webapp.vc.opentlc.com/[WebApp^]. It will display a visitor counter, and the hostname of the webserver that returned your request.
+The application is accessible from the following link: http://webapp.vc.redhatworkshops.io/[WebApp^]. It will display a visitor counter, and the hostname of the webserver that returned your request.
 
 The application consists of the following four virtual machines:
 
@@ -108,7 +108,7 @@ image::module-02-mtv/05_MTV_Create_Provider.png[link=self, window=blank, width=1
 +
 . Select *VMware* on the *Provider type* dropdown and fill the following data:
 .. *Name*: *vmware*
-.. *vCenter host name or IP address*: *portal.vc.opentlc.com*
+.. *vCenter host name or IP address*: *https://vcsrs00-vc.infra.demo.redhat.com/*
 .. *vCenter user name*: {vcenter_user}
 .. *vCenter password*: {vcenter_password}
 .. *VDDK init image*: *image-registry.openshift-image-registry.svc:5000/openshift/vddk:latest*
@@ -191,7 +191,7 @@ image::module-02-mtv/16_VMware_Source_Provider.png[link=self, window=blank, widt
 +
 image::module-02-mtv/17_VM_Select_VMWARE_Plan.png[link=self, window=blank, width=100%]
 +
-. On the next screen you will be tasked with providing details for your migration plan. Several details will already be filled in for you, but you will have to make a few minor modifications to ensure that the VMs land in the correct namespace, and that the networks and storage options map correctly. 
+. On the next screen you will be tasked with providing details for your migration plan. Several details will already be filled in for you, but you will have to make a few minor modifications to ensure that the VMs land in the correct namespace, and that the networks and storage options map correctly.
 +
 Please fill in your migration plan with the following values:
 
@@ -200,7 +200,7 @@ Please fill in your migration plan with the following values:
 * Network map: *Pod Networking*
 * Storage map: *ocs-storagecluster-ceph-rbd-virtualization*
 +
-NOTE: Both the Network and Storage map will automatically detect the Network and Datastore that the discovered virtual machines currently make use of on the source provider. You will just need to make sure that their respective values are set correctly on the OpenShift side. 
+NOTE: Both the Network and Storage map will automatically detect the Network and Datastore that the discovered virtual machines currently make use of on the source provider. You will just need to make sure that their respective values are set correctly on the OpenShift side.
 +
 . Click *Create migration plan*.
 +
@@ -236,11 +236,11 @@ IMPORTANT: Having many participants performing the same task in parallel in a si
 +
 image::module-02-mtv/25_Completed_VMWARE_Plan.png[link=self, window=blank, width=100%]
 +
-. The selected VMs have now been migrated and can be started on OpenShift Virtualization. 
+. The selected VMs have now been migrated and can be started on OpenShift Virtualization.
 
 == Summary
 
-In this section we explored the Migration Toolkit for Virtualization, and used it to assist with the migration of existing virtual machines from a VMware vSphere environment to OpenShift Virtualization. In addition to the Migration Toolkit for Virtualization, there are three other migration toolkits. The combination of these can be used to move many types of workloads into and within OpenShift clusters depending on your organization's needs. 
+In this section we explored the Migration Toolkit for Virtualization, and used it to assist with the migration of existing virtual machines from a VMware vSphere environment to OpenShift Virtualization. In addition to the Migration Toolkit for Virtualization, there are three other migration toolkits. The combination of these can be used to move many types of workloads into and within OpenShift clusters depending on your organization's needs.
 
 * https://developers.redhat.com/products/mtr/overview[Migration Toolkit for Runtimes^] - Assist and accelerate Java application modernization and migration.
 * https://access.redhat.com/documentation/en-us/migration_toolkit_for_applications/[Migration Toolkit for Applications^] - Accelerate large-scale application modernization efforts to containers and Kubernetes.
