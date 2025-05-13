@@ -167,6 +167,6 @@ In this section we explored the Migration Toolkit for Virtualization, and used i
 
 * https://developers.redhat.com/products/mtr/overview[Migration Toolkit for Runtimes^] - Assist and accelerate Java application modernization and migration.
 * https://access.redhat.com/documentation/en-us/migration_toolkit_for_applications/[Migration Toolkit for Applications^] - Accelerate large-scale application modernization efforts to containers and Kubernetes.
-* https://docs.openshift.com/container-platform/4.15/migration_toolkit_for_containers/about-mtc.html[Migration Toolkit for Containers^] - Migrate stateful application workloads between OpenShift clusters.
+* https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/migration_toolkit_for_containers/about-mtc[Migration Toolkit for Containers^] - Migrate stateful application workloads between OpenShift clusters.
 
 For more information about these other migration toolkits, please reach out to your Red Hat account team.
